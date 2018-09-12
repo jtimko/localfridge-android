@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    tools:context="com.localfridge.localfridge.FragmentRegistration">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/regErr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textColor="#ffffff"/>
+    <TextView
+        android:id="@+id/regSuccess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registration Success! Now log in."
+        android:textColor="#fff"
+        android:visibility="gone"/>
+    <EditText
+        android:id="@+id/regEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#ffffff"
+        android:textColorHint="#eeeeee" />
+
+    <EditText
+        android:id="@+id/regUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:textColor="#ffffff"
+        android:textColorHint="#eeeeee" />
+
+    <EditText
+        android:id="@+id/regPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#ffffff"
+        android:textColorHint="#eeeeee" />
+
+    <EditText
+        android:id="@+id/regZip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Zip Code"
+        android:inputType="number"
+        android:textColor="#ffffff"
+        android:textColorHint="#eeeeee" />
+
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Submit" />
+
+    <TextView
+        android:id="@+id/txtLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already a member? Click Here!"
+        android:textAlignment="center"
+        android:clickable="true"
+        android:textColor="#ffffff"/>
+
+</LinearLayout>

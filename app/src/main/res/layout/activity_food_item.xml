@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bodybg1"
+    android:orientation="vertical"
+    android:padding="12dp"
+    tools:context="com.localfridge.localfridge.FoodItemActivity">
+
+    <TextView
+        android:id="@+id/foodTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Food Title"
+        android:textColor="#000" />
+
+
+    <TextView
+        android:id="@+id/foodAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Posted by: solo"
+        android:layout_below="@+id/foodTitle"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/foodLoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Fairfield, ca"
+        android:layout_below="@+id/foodTitle"
+        android:layout_alignParentRight="true"/>
+
+
+    <TextView
+        android:id="@+id/foodDesc"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        android:text="Food desc.."
+        android:layout_below="@+id/foodAuthor" />
+
+    <Button
+        android:id="@+id/btnEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_below="@+id/foodDesc"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

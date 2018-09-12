@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    tools:context="com.localfridge.localfridge.FragmentGive">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/postErr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textColor="#000"/>
+    <EditText
+        android:id="@+id/foodTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name of food" />
+    <EditText
+        android:id="@+id/foodDesc"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:hint="Describe the food."/>
+    <Button
+        android:id="@+id/foodSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Give"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
